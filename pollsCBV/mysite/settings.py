@@ -26,7 +26,7 @@ SECRET_KEY = 'mv24_xyu5*=nv+l$*sqn_ilnx3q93*#o-o^3&3an-r*-4%yfxi'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['192.168.56.101', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['pybest.pythonanywhere.com', '192.168.56.101', 'localhost', '127.0.0.1']
 
 
 # Application definition
