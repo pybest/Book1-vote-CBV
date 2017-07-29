@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+{% load staticfiles %}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}home.html{% endblock %}</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+    <!-- my css -->
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+    {% block extra-style %}{% endblock %}
+
+</head>
+
+<body style="padding-top:90px;">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="{% url 'home' %}">Home</a></li>
+
+            <li><a href="{% url 'polls:index' %}">Polls</a></li>
+            <li><a href="{% url 'polls_new:index' %}">PollsNew</a></li>
+            <li><a href="{% url 'admin:index' %}">Admin</a></li>
+        </ul>
+
+    </div><!--/.container -->
+</nav><!--/.navbar -->
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+{% block footer %}{% endblock %}
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+{% block extra-script %}{% endblock %}
+
+</body>
+</html>
