@@ -124,4 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# shkim
+
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'mysite', 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'www_static')
