@@ -38,9 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # from open-source
-    'widget_tweaks',   # for bootstrap field styling
     # my own apps
     'polls.apps.PollsConfig',
     'polls_new.apps.PollsNewConfig',
