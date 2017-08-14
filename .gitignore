@@ -101,4 +101,6 @@ ENV/
 .mypy_cache/
 
 # shkim
-pollsCBV/.idea/
+pollsCBV/.idea/*
+*.xml
+*.iml
